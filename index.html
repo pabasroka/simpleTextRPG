@@ -9,14 +9,35 @@
 <body>
 
     <h1>Hello </h1>
-    <div class="interface" id="lvl"></div>
-    <div class="interface" id="exp"></div>
-    <div class="interface" id="gold"></div>
-    <div class="interface" id="str"></div>
-    <div class="interface" id="hp"></div>
-    <div class="interface" id="luck"></div>
 
-    <button></button>
+    <div id="interface" class="grid">
+        <div class="interface" id="lvl"></div>
+        <div class="interface" id="exp"></div>
+        <div class="interface" id="gold"></div>
+        <div class="interface" id="str"></div>
+        <div class="interface" id="hp"></div>
+        <div class="interface" id="luck"></div>
+    </div>
+    
+    <div id="actions" class="grid">
+
+        <div id="upgrade">
+            <button class="upgrade" id="addStr">Add str</button>
+            <button class="upgrade" id="addHp">Add hp</button>
+            <button class="upgrade" id="addLuck">Add luck</button>
+        </div>
+
+        <div id="missions">
+            <button class="mission" id="mission">Mission</button>
+            <button class="mission" id="mission">Mission</button>
+            <button class="mission" id="mission">Mission</button>
+            <button class="mission" id="mission">Mission</button>
+            <button class="mission" id="mission">Mission</button>
+        </div>
+
+    </div>
+
+    
     
     <script src="./js/init.js"></script>
 

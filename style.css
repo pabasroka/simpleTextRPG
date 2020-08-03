@@ -1,6 +1,48 @@
 body{
-    margin: 0 auto;
-    padding: 0;
-    background: rgb(20, 10, 44);
-    color: #fefefe;
+    margin: 0 auto; padding: 0;
+    background: rgb(31, 30, 31); color: #fefefe;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+#actions{
+    margin-top: 50px;
+    grid-column: span 4;
+}
+
+#interface{
+    margin: 0 50px;
+}
+
+.interface{
+    display: grid; grid-column: span 4;
+}
+
+
+#upgrade, #missions{
+    display: grid;
+    grid-column: span 4;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.upgrade, .mission{
+    grid-column: span 4;
+    width: 50px; height: 50px;
+    font-size: .7em;
+    border-radius: 8px; border: 2px solid rgb(22, 2, 92);
+    background: rgb(204, 79, 198); color: rgb(22, 2, 92);
+    cursor: pointer; text-align: center;
+    transition: all .2s ease-in-out;
+}
+.upgrade:hover{
+    transform: scale(0.97); background: rgb(235, 152, 230);
+}
+.mission{
+    border: 2px solid rgb(2, 92, 7);
+    background: rgb(97, 247, 52); color: rgb(2, 92, 7);
+}
+.mission:hover{
+    transform: scale(0.97); background: rgb(139, 245, 106);
 }
