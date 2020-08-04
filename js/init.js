@@ -13,39 +13,26 @@ function renew() {
     const strUI = document.querySelector('#str').innerHTML = `Strength: ${str}`
     const hpUI = document.querySelector('#hp').innerHTML = `Health Points: ${hp}`
     const luckUI = document.querySelector('#luck').innerHTML = `Luck: ${luck}`
+    lvlUp()
 }
 renew()
 
 
-
-
-document.querySelector('#addStr').addEventListener('click', () => {
-    if (gold >= 10) {
-        str++; gold -= 10
-    } renew()
-})
-document.querySelector('#addHp').addEventListener('click', () => {
-    if (gold >= 5) {
-        hp += Math.round(Math.random(2, 4))
-        console.log(Math.floor(Math.random(2, 4))
-)
-        gold -= 5
-    } renew()
-})
-document.querySelector('#addLuck').addEventListener('click', () => {
-    if (gold >= 20) {
-        luck++; gold -= 20
-    } renew()
-})
-
 function lvlUp() {
-    expR += 10
-    lvl++; 
-    document.querySelector('#lvl').innerHTML = `Lvl: ${lvl}`
-    document.querySelector('#exp').innerHTML = `Exp: ${exp} / ${expR}`
+    if(exp >= expR){
+        expR += 10
+        exp = 0
+        lvl++;
+        document.querySelector('#lvl').innerHTML = `Lvl: ${lvl}`
+        document.querySelector('#exp').innerHTML = `Exp: ${exp} / ${expR}`
+    }
 }
 
-
+function rand(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 
 

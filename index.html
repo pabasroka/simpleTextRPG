@@ -5,41 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text RPG</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
 
-    <h1>Hello </h1>
+    <h1>Welcome </h1>
 
     <div id="interface" class="grid">
         <div class="interface" id="lvl"></div>
+        <div class="interface" id="str"></div>   
         <div class="interface" id="exp"></div>
-        <div class="interface" id="gold"></div>
-        <div class="interface" id="str"></div>
         <div class="interface" id="hp"></div>
+        <div class="interface" id="gold"></div>
         <div class="interface" id="luck"></div>
     </div>
     
     <div id="actions" class="grid">
 
         <div id="upgrade">
-            <button class="upgrade" id="addStr">Add str</button>
-            <button class="upgrade" id="addHp">Add hp</button>
-            <button class="upgrade" id="addLuck">Add luck</button>
+            <button class="upgrade" id="addStr"><i class="fas fa-fist-raised"></i></button>
+            <button class="upgrade" id="addHp"><i class="fas fa-heart"></i></button>
+            <button class="upgrade" id="addLuck"><i class="fas fa-cannabis"></i></button>
         </div>
 
         <div id="missions">
-            <button class="mission" id="mission">Mission</button>
-            <button class="mission" id="mission">Mission</button>
-            <button class="mission" id="mission">Mission</button>
-            <button class="mission" id="mission">Mission</button>
-            <button class="mission" id="mission">Mission</button>
+            <button class="mission" id="mission1"><i class="fas fa-question-circle"></i></button>
+            <button class="mission" id="mission2"><i class="fas fa-hiking"></i></button>
+            <button class="mission" id="mission3"><i class="fas fa-coins"></i></button>
         </div>
 
     </div>
 
-    
+    <!--<i class="fas fa-coins shape"></i> -->
     
     <script src="./js/init.js"></script>
+    <script src="./js/upgrade.js"></script>
+    <script src="./js/mission.js"></script>
+    <!--<script src="./js/particlesAnim.js"></script>-->
 
 </body>
 </html>

@@ -25,24 +25,52 @@ body{
     display: grid;
     grid-column: span 4;
     grid-template-columns: repeat(8, 1fr);
+    margin: 0 20px;
 }
 
 .upgrade, .mission{
-    grid-column: span 4;
+    position: relative;
+    grid-column: span 1;
     width: 50px; height: 50px;
-    font-size: .7em;
+    font-size: 1.5em;
     border-radius: 8px; border: 2px solid rgb(22, 2, 92);
     background: rgb(204, 79, 198); color: rgb(22, 2, 92);
     cursor: pointer; text-align: center;
     transition: all .2s ease-in-out;
+    margin: 10px;
 }
 .upgrade:hover{
-    transform: scale(0.97); background: rgb(235, 152, 230);
+    transform: scale(0.97) translateY(-4px); background: rgb(235, 152, 230);
+    font-size: 2em;
+}
+.upgrade:active{
+    transform:  translateY(4px);
+    background: rgb(221, 111, 216);
+    color: rgb(11, 1, 46);
 }
 .mission{
     border: 2px solid rgb(2, 92, 7);
     background: rgb(97, 247, 52); color: rgb(2, 92, 7);
 }
 .mission:hover{
-    transform: scale(0.97); background: rgb(139, 245, 106);
+    transform: scale(0.97)  translateY(-4px); background: rgb(139, 245, 106);
+    font-size: 2em;
+}
+.mission:active{
+    transform:  translateY(4px);
+    background: rgb(119, 241, 82); color: rgb(1, 51, 3);
+}
+/*.upgrade::after{
+    position: absolute;
+    transform: none;
+    transition: none;
+    content: 'Eee';
+    bottom: -30px;
+    left: 5px;
+    font-size: .7em;
+    color: white;
+}*/
+
+.shape{
+    position: absolute;
 }
