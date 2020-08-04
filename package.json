@@ -1,0 +1,23 @@
+{
+  "name": "simpletextrpg",
+  "version": "1.0.0",
+  "description": "#   In this project, I want to learn - how RPG progression system works #   First of all I create upgrade system (like adding strength points) #   Later I want to use Luck parameter to create random fight action #   Optional feature: experiance progress bar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabasroka/simpleTextRPG.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabasroka/simpleTextRPG/issues"
+  },
+  "homepage": "https://github.com/pabasroka/simpleTextRPG#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "gsap": "^3.4.2"
+  }
+}
